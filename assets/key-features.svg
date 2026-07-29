@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="452" viewBox="0 0 1280 452" role="img" aria-labelledby="title desc">
+  <title id="title">PTManager 핵심 기능</title>
+  <desc id="desc">일정과 업무 공유: 사장 편성·발행 → 직원 확인, 공지 확인 · 인수인계 작성·조회. 빈 근무 자리 채우기: 대타 요청 · 열린 요청에 지원, 지원자 승인 → 근무자 교체. 출퇴근부터 급여까지: 사장 QR 발급 → 직원 스캔, 직원 급여 조회 · 사장 인건비 확인.</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; fill: #1D1D1F; }
+    .heading { font-size: 27px; font-weight: 700; }
+    .subtitle { font-size: 19px; fill: #48484A; }
+    .body { font-size: 19px; }
+    .label { font-size: 18px; font-weight: 700; fill: #0066CC; }
+    .role { font-size: 17px; font-weight: 700; fill: #0066CC; }
+    .employee { fill: #0066CC; }
+    .employer { fill: #7048E8; }
+    .icon { fill: none; stroke: #0066CC; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+  <rect width="1280" height="452" rx="16" fill="#F5F9FF"/>
+  <g transform="translate(24 24)">
+    <rect width="400" height="404" rx="14" fill="#FFFFFF" stroke="#E0E0E0"/>
+    <rect x="24" y="24" width="64" height="64" rx="16" fill="#EDF4FD"/>
+    <g class="icon" transform="translate(32 32)" aria-hidden="true"><rect x="5" y="9" width="38" height="34" rx="5"/><path d="M14 4v10M34 4v10M5 21h38M14 30h5M28 30h6M14 36h5"/></g>
+    <text x="104" y="63" class="label">01 | 근무표·소통</text>
+    <text x="24" y="132" class="heading">일정과 업무 공유</text>
+    <text x="24" y="164" class="subtitle"><tspan class="employee">직원</tspan>과 <tspan class="employer">사장</tspan>이 같은 근무표 확인</text>
+    <path d="M24 190H376" stroke="#F0F0F0"/>
+    <text x="24" y="226" class="role">근무 스케줄</text>
+    <text x="24" y="257" class="body"><tspan class="employer">사장</tspan> 편성·발행 → <tspan class="employee">직원</tspan> 확인</text>
+    <text x="24" y="315" class="role">매장 소통</text>
+    <text x="24" y="346" class="body">공지 확인 · 인수인계 작성·조회</text>
+  </g>
+  <g transform="translate(440 24)">
+    <rect width="400" height="404" rx="14" fill="#FFFFFF" stroke="#E0E0E0"/>
+    <rect x="24" y="24" width="64" height="64" rx="16" fill="#EDF4FD"/>
+    <g class="icon" transform="translate(32 32)" aria-hidden="true"><path d="M7 15h33l-8-8M40 33H7l8 8M40 15l-8 8M7 33l8-8"/></g>
+    <text x="104" y="63" class="label">02 | 대타</text>
+    <text x="24" y="132" class="heading">빈 근무 자리 채우기</text>
+    <text x="24" y="164" class="subtitle">요청부터 승인까지 앱에서 처리</text>
+    <path d="M24 190H376" stroke="#F0F0F0"/>
+    <text x="24" y="226" class="role"><tspan class="employee">직원</tspan></text>
+    <text x="24" y="257" class="body">대타 요청 · 열린 요청에 지원</text>
+    <text x="24" y="315" class="role"><tspan class="employer">사장</tspan></text>
+    <text x="24" y="346" class="body">지원자 승인 → 근무자 교체</text>
+  </g>
+  <g transform="translate(856 24)">
+    <rect width="400" height="404" rx="14" fill="#FFFFFF" stroke="#E0E0E0"/>
+    <rect x="24" y="24" width="64" height="64" rx="16" fill="#EDF4FD"/>
+    <g class="icon" transform="translate(32 32)" aria-hidden="true"><path d="M19 5H5v14M29 5h14v14M5 29v14h14M43 29v14H29"/><circle cx="24" cy="24" r="11"/><path d="M24 17v8l5 3"/></g>
+    <text x="104" y="63" class="label">03 | 근태·인건비</text>
+    <text x="24" y="132" class="heading">출퇴근부터 급여까지</text>
+    <text x="24" y="164" class="subtitle">QR로 기록하고 근태를 집계</text>
+    <path d="M24 190H376" stroke="#F0F0F0"/>
+    <text x="24" y="226" class="role">QR 출퇴근</text>
+    <text x="24" y="257" class="body"><tspan class="employer">사장</tspan> QR 발급 → <tspan class="employee">직원</tspan> 스캔</text>
+    <text x="24" y="315" class="role">급여·인건비</text>
+    <text x="24" y="346" class="body"><tspan class="employee">직원</tspan> 급여 조회 · <tspan class="employer">사장</tspan> 인건비 확인</text>
+  </g>
+</svg>
