@@ -31,27 +31,23 @@
   <img src="../assets/architecture.svg" width="100%" alt="PTManager 시스템 아키텍처"/>
 </p>
 
-두 앱은 하나의 REST API와 데이터를 공유합니다. 서버가 직원·사장 역할과 매장 소속을 검사하고, 직원·사장 앱은 `android-app/` 저장소의 `employee/`·`employer/` 모듈로 관리하며 공통 소스는 `common/`에 둡니다. FCM·S3는 설정으로 활성화하며, 기본 로컬 실행에서는 스텁을 사용합니다.
-
-백엔드는 헥사고날·클린 아키텍처의 유스케이스·출력 포트·어댑터로, Android는 MVVM·클린 아키텍처의 View·ViewModel·도메인·데이터 구현으로 분리합니다. JPA 매핑과 일부 기존 화면 렌더링은 유지합니다. 정확한 의존성 방향과 검사 범위는 [아키텍처 설계](../plan.md#아키텍처)를 참고하세요.
+두 앱은 단일 REST API와 DB를 공유하며 `android-app/`의 `employee/`·`employer/`·`common/`으로 구성합니다. 서버가 역할·매장 소속을 검사하고 FCM·S3는 로컬에서 스텁을 씁니다. 백엔드(헥사고날)와 Android(MVVM·클린)의 경계는 [아키텍처 설계](../03-tech/01-architecture.md#아키텍처와-경계)를 따릅니다.
 
 ## 앱 화면
 
-### 직원 · 출근과 대타 요청, 급여 확인
+2026-11-11 수정본을 Pixel 3a / Android 15 에뮬레이터와 로컬 데모 데이터로 촬영했습니다(대타 요청·승인은 입력·상세 화면).
 
+### 직원 · 출근과 대타 요청, 급여 확인
 
 | 01. 오늘 근무·출근 | 02. 대타 요청 | 03. 근무·급여 통계 |
 | :-------------------: | :-------------: | :-------------------: |
-| <img src="../assets/EmployeeApp/01_home.png" width="240" alt="직원 오늘 근무·출근 화면"/> | <img src="../assets/EmployeeApp/02_swap_request.png" width="240" alt="직원 대타 요청 화면"/> | <img src="../assets/EmployeeApp/03_stats.png" width="240" alt="직원 근무·급여 통계 화면"/> |
+| <img src="../assets/captures/employee-home.png" width="240" alt="직원 오늘 근무·출근 화면"/> | <img src="../assets/captures/employee-swap-request.png" width="240" alt="직원 대타 요청 화면"/> | <img src="../assets/captures/employee-stats.png" width="240" alt="직원 근무·급여 통계 화면"/> |
 
 ### 사장 · 출근 인증과 근무 관리
 
-
 | 01. 출근 QR | 02. 직원별 주간 스케줄 | 03. 대타 요청 승인 |
 | :-----------: | :----------------------: | :------------------: |
-| <img src="../assets/EmployerApp/01_attendance_qr.png" width="240" alt="사장 출근 QR 화면"/> | <img src="../assets/EmployerApp/02_schedule.png" width="240" alt="사장 직원별 주간 스케줄 화면"/> | <img src="../assets/EmployerApp/03_swap_approval.png" width="240" alt="사장 대타 요청 승인 화면"/> |
-
-대타 요청·승인은 입력 및 상세 화면을 촬영했으며 실제 요청 제출이나 승인은 하지 않았습니다.
+| <img src="../assets/captures/employer-attendance-qr.png" width="240" alt="사장 출근 QR 화면"/> | <img src="../assets/captures/employer-schedule.png" width="240" alt="사장 직원별 주간 스케줄 화면"/> | <img src="../assets/captures/employer-swap-approval.png" width="240" alt="사장 대타 요청 승인 화면"/> |
 
 ## 팀 구성
 
